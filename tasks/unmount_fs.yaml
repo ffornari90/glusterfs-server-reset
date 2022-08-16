@@ -1,0 +1,5 @@
+- name: Unmount GlusterFS
+  become: yes
+  ansible.posix.mount:
+    path: "{{ glusterfs_mountpoint }}"
+    state: unmounted

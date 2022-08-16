@@ -1,0 +1,12 @@
+- name: Stop glusterd
+  become: yes
+  service:
+    name: glusterd
+    enabled: yes
+    state: stopped
+- name: Stop glusterfsd
+  become: yes
+  service:
+    name: glusterfsd
+    enabled: yes
+    state: stopped

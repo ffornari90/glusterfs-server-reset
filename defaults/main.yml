@@ -1,0 +1,4 @@
+---
+# defaults file for glusterfs-reset
+glusterfs_mountpoint: /mnt/glusterfs
+device_name: /dev/vdb
