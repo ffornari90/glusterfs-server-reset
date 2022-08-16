@@ -1,0 +1,3 @@
+- name: Remove Gluster volume
+  become: yes
+  shell: "/usr/bin/echo y | /usr/sbin/gluster volume delete gluster-volume"

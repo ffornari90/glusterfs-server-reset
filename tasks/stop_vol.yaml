@@ -1,0 +1,3 @@
+- name: Stop Gluster volume
+  become: yes
+  shell: "/usr/bin/echo y | /usr/sbin/gluster volume stop gluster-volume"

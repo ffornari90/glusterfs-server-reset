@@ -1,5 +1,7 @@
 ---
 # tasks file for glusterfs-reset
+- import_tasks: stop_vol.yaml
+- import_tasks: remove_vol.yaml
 - import_tasks: service.yaml
 - import_tasks: unmount_fs.yaml
 - import_tasks: remove_lv.yaml
